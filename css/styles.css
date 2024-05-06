@@ -11,29 +11,36 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   max-width: 1000px;
-  display: grid;
-  grid-template-rows: 80px 1fr;
-  grid-template-areas: "search"
-                       "gallery";
   justify-items: center;
+  align-items: center;
 }
 
 header {
-  grid-area: search;
+  width: 80vw;
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin: 2%;
+  margin-bottom: 2%;
 }
 
 .gallery {
-  grid-area: gallery;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+img {
+  max-width: 300px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+a {
+  display: flex;
   justify-content: center;
-  grid-gap: 25px;
 }
 
 #search {
