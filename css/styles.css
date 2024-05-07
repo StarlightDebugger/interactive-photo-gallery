@@ -11,9 +11,9 @@ body {
 }
 
 .container {
+  max-width: 1024px;
   display: flex;
   flex-direction: column;
-  max-width: 1000px;
   justify-items: center;
   align-items: center;
 }
@@ -28,14 +28,8 @@ header {
 .gallery {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 20px;
-}
-
-img {
-  max-width: 300px;
-  height: 100%;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+  grid-gap: 3%;
 }
 
 a {
